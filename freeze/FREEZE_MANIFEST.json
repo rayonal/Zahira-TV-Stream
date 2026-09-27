@@ -1,0 +1,12 @@
+{
+  "freezeId": "ZTS-0.2B-CANONICAL-CATALOG-V1",
+  "frozenAt": "2026-09-27T21:25:56+07:00",
+  "catalogFile": "docs/catalog.json",
+  "schemaFile": "schema/zahira-tv-catalog-v1.schema.json",
+  "catalogVersion": 1,
+  "channelCount": 3,
+  "sha256": "bcddf697a88e34226b6ab164e564eed31d6102af75e5e388e0939fc355f36c70",
+  "contractStatus": "FROZEN",
+  "contentScope": "DEMO_TEST_STREAMS_ONLY",
+  "productionRightsGate": "Production channel URLs/logos require authorization or distributable/public sources."
+}

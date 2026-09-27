@@ -1,0 +1,45 @@
+{
+  "catalogVersion": 1,
+  "generatedAt": "2026-09-27T21:25:56+07:00",
+  "channels": [
+    {
+      "id": "demo-angel-one",
+      "number": 1,
+      "name": "Zahira Demo 1",
+      "category": "Demo",
+      "streamUrl": "https://storage.googleapis.com/shaka-demo-assets/angel-one-hls/hls.m3u8",
+      "logoUrl": "",
+      "description": "HLS test stream untuk validasi remote catalog Zahira TV Stream.",
+      "isLive": false,
+      "enabled": true,
+      "status": "online",
+      "sortOrder": 1
+    },
+    {
+      "id": "demo-bipbop",
+      "number": 2,
+      "name": "Zahira Demo 2",
+      "category": "Demo",
+      "streamUrl": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8",
+      "logoUrl": "",
+      "description": "Adaptive HLS test stream untuk remote catalog development.",
+      "isLive": false,
+      "enabled": true,
+      "status": "online",
+      "sortOrder": 2
+    },
+    {
+      "id": "demo-bbb",
+      "number": 3,
+      "name": "Zahira Demo 3",
+      "category": "Demo",
+      "streamUrl": "https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8",
+      "logoUrl": "",
+      "description": "Additional HLS test content untuk player regression.",
+      "isLive": false,
+      "enabled": true,
+      "status": "online",
+      "sortOrder": 3
+    }
+  ]
+}

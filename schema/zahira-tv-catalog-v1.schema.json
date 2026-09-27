@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zahira.invalid/schema/zahira-tv-catalog-v1.schema.json",
+  "title": "Zahira TV Stream Remote Catalog v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "catalogVersion",
+    "generatedAt",
+    "channels"
+  ],
+  "properties": {
+    "catalogVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "channels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "number",
+          "name",
+          "category",
+          "streamUrl",
+          "logoUrl",
+          "description",
+          "isLive",
+          "enabled",
+          "status",
+          "sortOrder"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"
+          },
+          "number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "streamUrl": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "logoUrl": {
+            "type": "string",
+            "pattern": "^(|https://.+)$"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "isLive": {
+            "type": "boolean"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "online",
+              "offline",
+              "maintenance"
+            ]
+          },
+          "sortOrder": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
